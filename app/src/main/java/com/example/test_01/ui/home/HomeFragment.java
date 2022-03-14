@@ -2,6 +2,7 @@ package com.example.test_01.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,8 @@ import java.util.Map;
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
+    private ArrayList<Map> ClassesList;
+    String[] colors = {"one.jpg","two.jpg","three.jpg","four.jpg","five.jpg","six.jpg"};
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -45,6 +48,12 @@ public class HomeFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getContext(), SubjectClassParticular.class);
+                intent.putExtra("ClassCode", String.valueOf(ClassesList.get(position).get("ClassCode")));
+                intent.putExtra("ClassName", String.valueOf(ClassesList.get(position).get("ClassName")));
+                intent.putExtra("ClassTeacher", String.valueOf(ClassesList.get(position).get("ClassTeacher")));
+                intent.putExtra("Email", ((NavigationDrawerActivity)getActivity()).getEmail());
+                intent.putExtra("Username", ((NavigationDrawerActivity)getActivity()).getUsername());
+                intent.putExtra("SubjectColor",colors[position%6]);
                 startActivity(intent);
             }
         });
@@ -73,6 +82,7 @@ public class HomeFragment extends Fragment {
                         ArrayList<Map> JoinedClasses = (ArrayList<Map>) documents.getData().get("ClassesJoined");
                         ArrayList<Map> CreatedClasses = (ArrayList<Map>) documents.getData().get("ClassesCreated");
                         JoinedClasses.addAll(CreatedClasses);
+                        ClassesList = JoinedClasses;
                         SubjectsArrayAdapter subjectsArrayAdapter = new SubjectsArrayAdapter(getContext(),JoinedClasses);
                         SubjectsListJoinedOrCreated.setAdapter(subjectsArrayAdapter);
                     }

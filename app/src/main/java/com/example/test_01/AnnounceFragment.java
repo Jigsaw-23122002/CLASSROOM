@@ -1,5 +1,6 @@
 package com.example.test_01;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 
@@ -19,6 +20,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -68,6 +70,7 @@ public class AnnounceFragment extends Fragment {
     TextView Footer;
     ListView OthersList;
     LinearLayout IssColor1;
+    FloatingActionButton AnnouncementLink;
 
     FirebaseFirestore UsersDatabase = FirebaseFirestore.getInstance();
 
@@ -101,6 +104,7 @@ public class AnnounceFragment extends Fragment {
             Footer = (TextView) view.findViewById(R.id.Footer);
             OthersList = (ListView) view.findViewById(R.id.OthersList);
             IssColor1 = (LinearLayout) view.findViewById(R.id.IssColor1);
+            AnnouncementLink = (FloatingActionButton) view.findViewById(R.id.AnnouncementLink);
 
             Header.setText(((SubjectClassParticular) getActivity()).getClassName());
             Footer.setText(((SubjectClassParticular) getActivity()).getClassTeacher());
@@ -130,6 +134,18 @@ public class AnnounceFragment extends Fragment {
                         AnnouncementsArrayAdapter announcementsArrayAdapter = new AnnouncementsArrayAdapter(getContext(), Announcements);
                         OthersList.setAdapter(announcementsArrayAdapter);
                     }
+                }
+            });
+
+            AnnouncementLink.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(getContext(),AnnouncementPage.class);
+                    intent.putExtra("Username",((SubjectClassParticular)getActivity()).getUsername());
+                    intent.putExtra("ClassCode",((SubjectClassParticular)getActivity()).getClassCode());
+                    intent.putExtra("ClassName",((SubjectClassParticular)getActivity()).getClassName());
+                    intent.putExtra("ClassTeacher",((SubjectClassParticular)getActivity()).getClassTeacher());
+                    startActivity(intent);
                 }
             });
         }

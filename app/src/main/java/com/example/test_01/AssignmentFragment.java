@@ -11,6 +11,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -25,6 +26,7 @@ import com.google.firebase.firestore.QuerySnapshot;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -105,9 +107,11 @@ public class AssignmentFragment extends Fragment {
                     u.put("AssignmentCode",String.valueOf(ds.getData().get("AssignmentCode")));
                     AssignmentsArrayList.add(u);
                 }
-                AssignmentsArrayAdapter AssignmentsArrayAdapter = new AssignmentsArrayAdapter(getContext(),
-                        AssignmentsArrayList);
-                AssignmentsPageOfClass.setAdapter(AssignmentsArrayAdapter);
+                if(getContext()!=null) {
+                    AssignmentsArrayAdapter AssignmentsArrayAdapter = new AssignmentsArrayAdapter(getContext(),
+                            AssignmentsArrayList);
+                    AssignmentsPageOfClass.setAdapter(AssignmentsArrayAdapter);
+                }
             }
         });
 
@@ -145,5 +149,21 @@ public class AssignmentFragment extends Fragment {
                 });
             }
         });
+        AssignmentsPageOfClass.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getContext(),AssignmentParticular.class);
+                intent.putExtra("Username",((SubjectClassParticular)getActivity()).getUsername());
+                intent.putExtra("Email",((SubjectClassParticular)getActivity()).getEmail());
+                intent.putExtra("ClassCode",((SubjectClassParticular)getActivity()).getClassCode());
+                intent.putExtra("ClassName",((SubjectClassParticular)getActivity()).getClassName());
+                intent.putExtra("ClassTeacher",((SubjectClassParticular)getActivity()).getClassTeacher());
+                intent.putExtra("AssignmentTitle",String.valueOf(AssignmentsArrayList.get(position).get("AssignmentTitle")));
+                intent.putExtra("AssignmentDescription",String.valueOf(AssignmentsArrayList.get(position).get("AssignmentDescription")));
+                intent.putExtra("AssignmentCode",String.valueOf(AssignmentsArrayList.get(position).get("AssignmentCode")));
+                startActivity(intent);
+            }
+        });
     }
+
 }

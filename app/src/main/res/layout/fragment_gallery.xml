@@ -27,6 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:text="Enter the subject name" />
 
@@ -38,6 +39,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:ems="10"
+            android:fontFamily="@font/montserrat"
             android:hint="Subject Name"
             android:inputType="textPersonName" />
 
@@ -46,6 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:text="Enter the class code" />
 
@@ -57,38 +60,50 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:ems="10"
+            android:fontFamily="@font/montserrat"
             android:hint="Class Code"
             android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:paddingLeft="20dp"
+            android:text="Instruction for creating class"
+            android:textColor="@color/black" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:paddingRight="20dp"
-            android:text=".The Class Code made here will be used by the students to join the class."
-            android:textColor="@color/black" />
+            android:text=".The Class Code made here will be used by the students to join the class." />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:paddingRight="20dp"
-            android:text=".The Class Made by you cannot be leave by you.You can destroy the class leading to the loss of all the data related to the class."
-            android:textColor="@color/black" />
+            android:text=".The Class Made by you cannot be leave by you." />
 
         <Button
             android:id="@+id/CreateClassButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
             android:background="@drawable/join_button_shape"
-            android:backgroundTint="@color/white"
+            android:backgroundTint="#1E90FF"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
@@ -102,6 +117,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat"
             android:textAlignment="center"
             android:textColor="@android:color/holo_red_light" />
     </LinearLayout>

@@ -25,6 +25,7 @@
             android:id="@+id/Text1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:text="You're currently signed in as"
@@ -35,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:textColor="@color/black" />
 
@@ -43,6 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="Ask Your Teacher for the class code, then enter it here." />
@@ -55,6 +58,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="30dp"
             android:ems="10"
+            android:fontFamily="@font/montserrat"
             android:hint="Class code"
             android:inputType="textPersonName" />
 
@@ -63,6 +67,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text="To sign in with a class code"
@@ -73,6 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:text=". Use an authorized account" />
 
@@ -81,6 +87,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:text=". Use a class code, with 6-7 letters and numbers and no spaces or symbols" />
@@ -92,6 +99,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
             android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"
@@ -103,6 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/montserrat"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
             android:textAlignment="center"

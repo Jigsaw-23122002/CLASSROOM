@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -66,7 +67,7 @@ public class AssignmentFragment extends Fragment {
         return fragment;
     }
 
-    FloatingActionButton AddAssignmentFloatingButton;
+    ImageView AddAssignmentFloatingButton;
     FirebaseFirestore DatabaseUsers = FirebaseFirestore.getInstance();
     ArrayList<Map> AssignmentsArrayList;
     ListView AssignmentsPageOfClass;
@@ -91,7 +92,7 @@ public class AssignmentFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        AddAssignmentFloatingButton = (FloatingActionButton) view.findViewById(R.id.AddAssignmentFloatingButton);
+        AddAssignmentFloatingButton = (ImageView) view.findViewById(R.id.AddAssignmentFloatingButton);
         AssignmentsPageOfClass = (ListView) view.findViewById(R.id.AssignmentsListOfClass);
 
         DatabaseUsers.collection("AssignmentsCreated").whereEqualTo("ClassCode",((SubjectClassParticular)getActivity()).getClassCode())

@@ -36,6 +36,7 @@
                     android:layout_marginRight="20dp"
                     android:layout_marginBottom="20dp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/roboto"
                     android:textColor="@color/black" />
             </LinearLayout>
 
@@ -59,6 +60,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
+                        android:fontFamily="@font/roboto"
                         android:paddingLeft="15dp"
                         android:paddingRight="15dp"
                         android:text="Announcement Title"
@@ -71,6 +73,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="35dp"
                         android:ems="10"
+                        android:fontFamily="@font/roboto"
                         android:hint="Title"
                         android:inputType="textPersonName" />
 
@@ -78,6 +81,7 @@
                         android:id="@+id/textView6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
                         android:paddingLeft="15dp"
                         android:paddingTop="10dp"
                         android:paddingRight="15dp"
@@ -97,6 +101,7 @@
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
                             android:ems="10"
+                            android:fontFamily="@font/roboto"
                             android:gravity="top|start"
                             android:hint="Description"
                             android:inputType="textMultiLine"
@@ -115,6 +120,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginRight="20dp"
+                    android:fontFamily="@font/roboto"
                     android:textAlignment="center"
                     android:textColor="@android:color/holo_red_light" />
 
@@ -127,6 +133,7 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/join_button_shape"
                     android:backgroundTint="#1E90FF"
+                    android:fontFamily="@font/roboto"
                     android:text="Upload Announcement"
                     android:textColor="@color/white" />
 

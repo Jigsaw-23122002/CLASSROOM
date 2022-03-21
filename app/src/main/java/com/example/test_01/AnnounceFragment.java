@@ -70,7 +70,7 @@ public class AnnounceFragment extends Fragment {
     TextView Footer;
     ListView OthersList;
     LinearLayout IssColor1;
-    FloatingActionButton AnnouncementLink;
+    ImageButton AnnouncementLink;
 
     FirebaseFirestore UsersDatabase = FirebaseFirestore.getInstance();
 
@@ -104,10 +104,12 @@ public class AnnounceFragment extends Fragment {
             Footer = (TextView) view.findViewById(R.id.Footer);
             OthersList = (ListView) view.findViewById(R.id.OthersList);
             IssColor1 = (LinearLayout) view.findViewById(R.id.IssColor1);
-            AnnouncementLink = (FloatingActionButton) view.findViewById(R.id.AnnouncementLink);
+            AnnouncementLink = (ImageButton) view.findViewById(R.id.AnnouncementLink);
 
             Header.setText(((SubjectClassParticular) getActivity()).getClassName());
-            Footer.setText(((SubjectClassParticular) getActivity()).getClassTeacher());
+            if(((SubjectClassParticular)getActivity()).getClassTeacher()!=null){
+                Footer.setText(((SubjectClassParticular) getActivity()).getClassTeacher());
+            }
             Header.setTextColor(Color.parseColor("white"));
             Footer.setTextColor(Color.parseColor("white"));
 

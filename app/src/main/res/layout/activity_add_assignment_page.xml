@@ -35,6 +35,7 @@
                     android:id="@+id/textView12"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
                     android:paddingTop="10dp"
                     android:text="Create Assignment"
                     android:textAlignment="center"
@@ -44,6 +45,7 @@
                     android:id="@+id/textView13"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
                     android:paddingLeft="20dp"
                     android:paddingTop="10dp"
                     android:paddingRight="20dp"
@@ -56,6 +58,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:ems="10"
+                    android:fontFamily="@font/montserrat"
                     android:hint="Title"
                     android:inputType="textPersonName" />
 
@@ -63,6 +66,7 @@
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
                     android:paddingLeft="20dp"
                     android:paddingTop="10dp"
                     android:paddingRight="20dp"
@@ -75,6 +79,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="20dp"
                     android:ems="10"
+                    android:fontFamily="@font/montserrat"
                     android:hint="Description"
                     android:inputType="textPersonName" />
 
@@ -82,67 +87,67 @@
                     android:id="@+id/textView15"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat"
                     android:paddingLeft="20dp"
                     android:paddingTop="10dp"
                     android:paddingRight="20dp"
-                    android:text="Attach a file for this assignment" />
+                    android:text="Attach a file for this assignment(Click on the Upload button below)" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="20dp"
                     android:orientation="horizontal">
 
-                    <EditText
+                    <TextView
                         android:id="@+id/AddAssignmentFileCode"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginRight="20dp"
-                        android:ems="10"
-                        android:hint="Click to attach file"
-                        android:inputType="textPersonName" />
-
-                    <Button
-                        android:id="@+id/UploadFileButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:background="@drawable/join_button_shape"
-                        android:backgroundTint="#1E90FF"
-                        android:text="Upload File"
-                        android:textColor="@color/white" />
+                        android:fontFamily="@font/montserrat"
+                        android:hint="File Selected"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="100dp"
-                    android:orientation="horizontal">
+                    android:layout_marginTop="50dp"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
+                    <Button
+                        android:id="@+id/UploadFileButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
                         android:layout_weight="1"
-                        android:orientation="horizontal"></LinearLayout>
+                        android:background="@drawable/join_button_shape"
+                        android:backgroundTint="#1E90FF"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Upload File"
+                        android:textColor="@color/white" />
 
                     <Button
                         android:id="@+id/CreateAssignmentAndAdd"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="10dp"
                         android:background="@drawable/join_button_shape"
                         android:backgroundTint="#1E90FF"
+                        android:fontFamily="@font/montserrat"
                         android:text="Create"
                         android:textAlignment="center"
                         android:textColor="@color/white" />
 
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal"></LinearLayout>
                 </LinearLayout>
 
             </LinearLayout>

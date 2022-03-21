@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -33,10 +34,9 @@ import java.util.Map;
 
 public class AddAssignmentPage extends AppCompatActivity {
 
-    ImageView BackFromAddAssignmentPage;
     EditText AddAssignmentTitle;
     EditText AddAssignmentDescription;
-    EditText AddAssignmentFileCode;
+    TextView AddAssignmentFileCode;
     Button UploadFileButton;
     Button AddAssignmentAndCreate;
 
@@ -109,7 +109,7 @@ public class AddAssignmentPage extends AppCompatActivity {
 
         AddAssignmentTitle = (EditText) findViewById(R.id.AddAssignmentTitle);
         AddAssignmentDescription = (EditText) findViewById(R.id.AddAssignmentDescription);
-        AddAssignmentFileCode = (EditText) findViewById(R.id.AddAssignmentFileCode);
+        AddAssignmentFileCode = (TextView) findViewById(R.id.AddAssignmentFileCode);
         UploadFileButton = (Button) findViewById(R.id.UploadFileButton);
         AddAssignmentAndCreate = (Button) findViewById(R.id.CreateAssignmentAndAdd);
 

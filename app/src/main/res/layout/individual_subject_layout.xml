@@ -20,7 +20,7 @@
             android:id="@+id/ASSSubject"
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:textFontWeight="@integer/material_motion_duration_long_1"
@@ -30,7 +30,7 @@
             android:id="@+id/ASSProfessor"
             android:layout_width="match_parent"
             android:layout_height="25dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="10dp"
             android:paddingBottom="5dp" />
 

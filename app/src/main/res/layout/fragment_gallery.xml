@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="20dp"
             android:text="Enter the subject name" />
 
@@ -39,7 +39,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:ems="10"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:hint="Subject Name"
             android:inputType="textPersonName" />
 
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="20dp"
             android:text="Enter the class code" />
 
@@ -60,7 +60,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="25dp"
             android:ems="10"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:hint="Class Code"
             android:inputType="textPersonName" />
 
@@ -69,7 +69,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="20dp"
             android:text="Instruction for creating class"
             android:textColor="@color/black" />
@@ -78,7 +78,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:paddingRight="20dp"
@@ -88,7 +88,7 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="20dp"
             android:paddingTop="20dp"
             android:paddingRight="20dp"
@@ -103,7 +103,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/join_button_shape"
             android:backgroundTint="#1E90FF"
-            android:fontFamily="@font/montserrat"
+            android:fontFamily="@font/roboto"
             android:paddingLeft="10dp"
             android:paddingTop="10dp"
             android:paddingRight="10dp"

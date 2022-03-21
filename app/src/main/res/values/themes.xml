@@ -14,9 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="NewFontStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
     <style name="Theme.Test_01.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
     </style>
 
     <style name="Theme.Test_01.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
